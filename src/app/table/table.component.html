@@ -1,0 +1,23 @@
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+        <tr>
+            <th>Pickup Date</th>
+            <th>Delivered</th>
+            <th>Undelivered</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of mapData">
+            <td>{{ data.month }}</td>
+            <td>{{ data.deliverd }}</td>
+            <td>{{ data.undelivered }}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td>{{sumDelivered | currency}}</td>
+            <td>{{sumUndelivered | currency}}</td>
+        </tr>
+    </tfoot>
+</table>

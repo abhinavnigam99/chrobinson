@@ -1,0 +1,8 @@
+<div class="form-group">
+  <label for="chartType">Bar Chart</label>    
+  <select class="form-control" id="chartType" (change)="selectChange($event)" style="width: auto;">
+    <option value='grouped'>Grouped</option>        
+    <option value='stacked'>Stacked</option>   
+  </select>
+</div>
+<div id='svg'></div>
