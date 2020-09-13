@@ -16,7 +16,7 @@ export class ChartD3Component implements OnInit {
 
   constructor() { }
   ngOnInit() {
-    d3.csv('../assets/bar-chart.csv',
+    d3.csv('assets/bar-chart.csv',
       (d) => {
         return {
           month: d.month,
